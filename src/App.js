@@ -36,13 +36,24 @@ function App() {
         <div className='form'>
           <form>
             <div >
-              <label>CARDHOLDER NAME</label>
-              <input type="text" placeholder="Eg. Rohan Sangle "/>
+              <label>Cardholder Name</label>
+              <input type="text" placeholder="eg. Rohan Sangle "/>
             </div>
             <div>
-              <label>CARD NUMBER</label>
-              <input type="password" placeholder="Eg. 9591 6489 6389 1013"/>
+              <label>Card Number</label>
+              <input type="text" placeholder="eg. 9591 6489 6389 1013" maxLength={19}/>
             </div>
+
+            <article className='expiry'>
+              <div >
+                <label>Exp. date (MM/YY)</label>
+                <input type="month" placeholder="MM YY"/>
+              </div>
+              <div >
+                <label>Cvc</label>
+                <input type="number" placeholder="eg. 123 "/>
+              </div>
+            </article>
             <div >
               <button type="submit" className="confirm_btn">Confirm</button>
             </div>
