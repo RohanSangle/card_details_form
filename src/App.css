@@ -5,7 +5,7 @@
 
 .cards{
   position: absolute;
-  row-gap: 50px;
+  row-gap: 30px;
   column-gap: 50px; 
   left: 15%;
   display: grid;
@@ -14,7 +14,7 @@
 
 .form{
   position: absolute;
-  top: 30%;
+  top: 40%;
   left: 65%;
   width: 400px;
   height: 300px;
@@ -24,12 +24,13 @@
 
 .frontcard{
   background: url("./images/bg-card-front.png") no-repeat;
-  border-radius: 20px;
+  border-radius: 10px;
   background-size: cover;
   background-position: center;
-  width: 200px;
+  /* width: 200px; */
   height: 200px; 
   padding: 5%;
+  /* margin-top: -20%; */
 }
 
 .backcard{
@@ -37,7 +38,7 @@
   border-radius: 20px;
   background-size: cover;
   background-position: center;
-  width: 200px;
+  /* width: 200px; */
   height: 200px; 
   padding: 5%;
   margin-left: 100px;
@@ -47,7 +48,7 @@
   .frontcard, .backcard{
     width: 400px;
     height: 200px;
-    border-radius: 20px;
+    border-radius: 15px;
     
   }
 }
@@ -56,17 +57,20 @@
   margin-top: 15%;
   display: flex;
   color: white;
-  justify-content: center;
-  word-spacing: 10px;
+  /* justify-content: center; */
+  word-spacing: 8px;
+  letter-spacing: 3px;
+  font-weight: 400;
 }
 
 .credentials{
   color: white;
   display: flex;
-  margin-top: 5%;
+  margin-top: 10%;
   justify-content: space-between;
   text-transform: uppercase;
   letter-spacing: 5px;
+  font-size:small;
  
 }
 
@@ -89,6 +93,43 @@
 }
 
 .btn{
+  position: relative;
+  top: 80%;
+  /* left: 35%; */
+  width: 400px;
+  height: 50px;
+  background-color: hsl(278, 68%, 11%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.thankyouform{
+  position: absolute;
+  top: 10%;
+  /* left: 2%; */
+  width: 400px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tickblock{
+  margin-block: center;
+  margin-bottom: 5%;
+}
+
+.thank{
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 15%;
+}
+
+.btn2{
   position: absolute;
   top: 80%;
   /* left: 35%; */
@@ -102,21 +143,10 @@
   cursor: pointer;
 }
 
-.tickblock{
-  margin-block: auto;
-  margin-bottom: 80%;
-}
-
-.thank{
-  text-transform: uppercase;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
 
 form label{
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 3%;
   text-transform: uppercase;
   text-size-adjust: small;
   word-spacing: 5px;
@@ -128,5 +158,5 @@ form input{
   border-radius: 5px;
   border: 1px solid #ccc;
   padding: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 5%;
 }
