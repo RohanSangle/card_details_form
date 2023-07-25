@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# Frontend Mentor - Interactive card details form
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a solution to the [Interactive card details form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Available Scripts
+Difficulty level : **Junior** <br>
+Time taken by me : **11 hours**
 
-In the project directory, you can run:
+## Table of contents
 
-### `npm start`
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Overview
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This was a Junior level challenge given by Frontend Mentor to develop a card details form component using HTML,CSS and Js.
+The challenge was to build a card details form that lets the user fill their card details and a submitted form should appear.
+They had provided the [style-guide](style-guide.md) to select only these particular CSS styling. They had also provided with images of what the final output should be like.
+We were allowed to use any method to code and bring out the final output.
 
-### `npm test`
+### The challenge
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Users should be able to:
 
-### `npm run build`
+- Fill in the form and see the card details update in real-time
+- Receive error messages when the form is submitted if:
+  - Any input field is empty
+  - The card number, expiry date, or CVC fields are in the wrong format
+- View the optimal layout depending on their device's screen size
+- See hover, active, and focus states for interactive elements on the page
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## My process
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+As this challenege was to make a card details form component, and there were no restrictions on what tech stack to use, so I used Reactjs. I wanted to learn the use of Reactjs and proper deployment of apps.
+while visualizing what approah i would take, i looked that here only the form component will be rendered so insted of man=king a seperate folder for that i just wrote it in app.js. (big mistake :|)
+The main functionality was very simple, the hardest part was the CSS.
+Here i used ```event.target.value``` to change the details on the card as the user types it in the form. This made it look very interactive. 
+for CSS the hardest part was to handle media query as the design for desktop version was very different than for mobile version.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Built with
 
-### `npm run eject`
+- Semantic HTML5 markup
+- CSS custom properties
+- [React](https://reactjs.org/) - JS library
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### What I learned
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Mostly i learned about the css, how to position it properly, how to write media queries. 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Continued development
 
-## Learn More
+I think that now i have got a good grasp upon my React.js and CSS and will further continue to do bigger projects.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Author
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Linkedin - [Rohan Sangle](https://www.linkedin.com/in/rohan-sangle)
+- Frontend Mentor - [@RohanSangle](https://www.frontendmentor.io/profile/RohanSangle)
 
-### Code Splitting
+## Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+I would like to acknowledge Frontend Mentor for providing such good level challeneges. This really helps me to understand in which part do I lack and how should I tackle it.

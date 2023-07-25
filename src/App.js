@@ -26,12 +26,12 @@ function App() {
       <div>
         <div className="cards">
           <article className='frontcard'>
-            <img src={cardlogo} alt='' />
+            <img src={cardlogo} alt='' className='cardlogo' />
             <div >
               <h2 className='cardnumber'>{cardNumber}</h2>
               <ul className='credentials'>
-                <h3>{name}</h3>
-                <h3>{date}</h3>
+                <h3 className='flex'>{name}</h3>
+                <h3 className='noflex'>{date}</h3>
               </ul>
             </div>
           </article>
