@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import { useForm } from "react-hook-form";
 import './App.css'
 import bgDesktop from './images/bg-main-desktop.png'
 import bgMobile from './images/bg-main-mobile.png'
@@ -11,6 +12,8 @@ function App() {
   const[cardNumber, setCardNumber]=useState("")
   const[date, setDate]=useState("")
   const[cvc, setCvc]=useState("")
+  const { register, handleSubmit, formState:{errors} } = useForm();
+  const onSubmit = data => console.log(data);
 
   return (
     <>
@@ -42,33 +45,36 @@ function App() {
 
         <div className='form'>
           {!confirmed && (
-            <form>
+            <form onSubmit={handleSubmit(onSubmit)}>
             <div >
               <label>Cardholder Name</label>
-              <input type="text" placeholder="eg. Rohan Sangle " required value={name} onChange={(e)=>setName(e.target.value)}/>
+              <input name="cardholder_name" id='cardholder_name' type="text" placeholder="eg. Rohan Sangle " value={name} onChange={(e)=>setName(e.target.value)}/>  
+              {/* {...register('cardholder_name', {required:true})} */}
+              {/* {errors.cardholder_name && <span>This field is required</span>} */}
             </div>
             <div>
               <label>Card Number</label>
-              <input type="text" placeholder="eg. 9591 6489 6389 1013" maxLength={19} required value={cardNumber.replace(/\s/g, "").replace(/(\d{4})/g, "$1 ").trim()} onChange={(e)=>setCardNumber(e.target.value)}/>
+              <input id='card_number' type="text" placeholder="eg. 9591 6489 6389 1013" maxLength={19} required value={cardNumber.replace(/\s/g, "").replace(/(\d{4})/g, "$1 ").trim()} onChange={(e)=>setCardNumber(e.target.value)}/>
             </div>
 
             <article className='expiry'>
               <div >
                 <label>Exp. date (MM/YY)</label>
-                <input type="month" placeholder="MM YY" required value={date} onChange={(e)=>setDate(e.target.value)}/>
+                <input id='month_year' type="month" placeholder="MM YY" required value={date} onChange={(e)=>setDate(e.target.value)}/>
               </div>
               <div >
                 <label>Cvc</label>
-                <input type="number" placeholder="eg. 123 " maxLength={3} required value={cvc} onChange={(e)=>setCvc(e.target.value)}/>
+                <input id='cvc' type="number" placeholder="eg. 123 " maxLength={3} required value={cvc} onChange={(e)=>setCvc(e.target.value)}/>
               </div>
             </article>
             <div >
-              <button onClick={()=> setConfirmed(true)} className="btn">Confirm</button>
+              <button type='submit' onClick={()=> setConfirmed(true)} className="btn">Confirm</button>
             </div>
           </form>
           )}
           
-          {confirmed && <ThankYou setConfirmed={setConfirmed}/>}
+          {confirmed && <ThankYou setConfirmed={setConfirmed} />}
+          
         </div>
       </div>
     </section>
