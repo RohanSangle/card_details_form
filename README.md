@@ -26,9 +26,9 @@ I had to utilize media query because the design for the desktop version was cons
 
 ### Screenshots
 
-![App Screenshot](https://i.postimg.cc/67vrY8zx/photo-2024-05-05-23-01-35.jpg)
+[![photo-2024-05-05-23-01-35.jpg](https://i.postimg.cc/6QHM6Rvq/photo-2024-05-05-23-01-35.jpg)](https://postimg.cc/67vrY8zx)
 
-![App Screenshot](https://i.postimg.cc/0M1p39HM/photo-2024-05-05-23-01-40.jpg)
+[![photo-2024-05-05-23-01-40.jpg](https://i.postimg.cc/3RdnkRXB/photo-2024-05-05-23-01-40.jpg)](https://postimg.cc/0M1p39HM)
 
 ### Tech Stack
 
