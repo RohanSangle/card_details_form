@@ -26,9 +26,9 @@ I had to utilize media query because the design for the desktop version was cons
 
 ### Screenshots
 
-![App Screenshot](https://drive.google.com/file/d/1ejIFlNciCQDOT2sBR1ZpRILC3XXxcpi7/view?usp=drive_link)
+![App Screenshot](https://i.postimg.cc/67vrY8zx/photo-2024-05-05-23-01-35.jpg)
 
-![App Screenshot](https://drive.google.com/file/d/1jlmaxWxwqRpVQQq1SmwX87wsJcfPFHbW/view?usp=drive_link)
+![App Screenshot](https://i.postimg.cc/0M1p39HM/photo-2024-05-05-23-01-40.jpg)
 
 ### Tech Stack
 
